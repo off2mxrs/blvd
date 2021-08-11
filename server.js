@@ -23,6 +23,10 @@ app.post('/blvd', (req, res) => {
 })
 
 
+///////// 🎙 SHOW ROUTE //////////////
+app.get('/blvd/:id', (req, res) => {
+    res.send('SHOW BLVD Profile page')
+})
 
 
 
