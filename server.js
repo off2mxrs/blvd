@@ -25,15 +25,9 @@ app.use('/blvd', userController);
 
 
 
-///////// 💻 UPDATE ROUTE //////////////
-app.put('/blvd/:id', (req, res) => {
-    res.send('UPDATE BLVD Profile page')
-})
 
-///////// 🗑 Delete ROUTE //////////////
-app.delete('/blvd/:id', (req, res) => {
-    res.send('DELETE BLVD Profile page')
-})
+
+
 
 
 /// START SERVER ////////////

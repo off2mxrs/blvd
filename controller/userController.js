@@ -31,6 +31,9 @@ router.get('/:userId/edit', (req, res) => {
 router.put('/:userId', (req, res) => {
     res.redirect('/blvd')
 })
-
+///////// 🗑 Delete ROUTE //////////////
+router.delete('/:userId', (req, res) => {
+    res.redirect('/blvd')
+})
 
 module.exports = router;
