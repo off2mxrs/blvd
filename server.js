@@ -10,14 +10,13 @@ const userController = require('./controller/userController')
 
 
 //////////MIDDLEWARE///////////
+app.set('view engine', 'ejs');
 app.use('/blvd', userController);
 
-///////// 🏁 INDEX ROUTE //////////////
-// app.get('/blvd', (req, res) => {
-//     res.send('WELCOME TO BLVD')
-// })
 
-///////// 🆕 NEW ROUTE //////////////
+
+
+///////// 🆕 NEW ROUTE //////////////()
 app.get('/blvd/new', (req, res) => {
     res.send('NEW BLVD Profile page')
 })

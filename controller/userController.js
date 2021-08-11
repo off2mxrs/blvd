@@ -4,7 +4,7 @@ const router = express.Router();
 
 ///////// 🏁 INDEX ROUTE //////////////
 router.get('/', (req, res) => {
-    res.send('WELCOME TO BLVD')
+    res.render('../views/index.ejs')
 })
 
 
