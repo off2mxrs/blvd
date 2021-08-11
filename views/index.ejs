@@ -8,5 +8,11 @@
 </head>
 <body>
     <h1>Welcome to BLVD</h1>
+    <% for(let i = 0; i < allUsers.length; i++) {%> 
+     <a href="/blvd/<%= allUsers[i]._id %> ">
+            <h2><%= allUsers[i].name %> </h2>
+    </a>
+    <% } %> 
+
 </body>
 </html>

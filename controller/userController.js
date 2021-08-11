@@ -7,7 +7,11 @@ const db = require('../models/index')
 // base route '/blvd' //// 
 ///////// 🏁 INDEX ROUTE //////////////
 router.get('/', (req, res) => {
-    res.render('index.ejs')
+    db.User.find({}, (err, allUsers) => {
+        if (err) return console.log(err)
+        res.render('index.ejs', {allUsers: allUsers})
+    })
+    
 })
 
 ///////// 🆕 NEW ROUTE //////////////()
