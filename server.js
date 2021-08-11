@@ -33,6 +33,10 @@ app.get('/blvd/:id/edit', (req, res) => {
     res.send('EDIT BLVD Profile page')
 })
 
+///////// 💻 UPDATE ROUTE //////////////
+app.put('/blvd/:id', (req, res) => {
+    res.send('UPDATE BLVD Profile page')
+})
 
 
 
