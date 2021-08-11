@@ -1,7 +1,10 @@
 const express = require('express')
 const router = express.Router();
 
+// MONGOOSE DATABASE ///////////
+const db = require('../models/index')
 
+// base route '/blvd' //// 
 ///////// 🏁 INDEX ROUTE //////////////
 router.get('/', (req, res) => {
     res.render('index.ejs')
@@ -29,6 +32,12 @@ router.get('/:userId/edit', (req, res) => {
 
 ///////// 💻 UPDATE ROUTE //////////////
 router.put('/:userId', (req, res) => {
+    res.redirect('/blvd')
+})
+
+
+///////// 🗑 Delete ROUTE //////////////
+router.delete('/blvd/:id', (req, res) => {
     res.redirect('/blvd')
 })
 
