@@ -27,6 +27,10 @@ router.get('/:userId/edit', (req, res) => {
     res.render('edit.ejs')
 })
 
+///////// 💻 UPDATE ROUTE //////////////
+router.put('/:userId', (req, res) => {
+    res.redirect('/blvd')
+})
 
 
 module.exports = router;
