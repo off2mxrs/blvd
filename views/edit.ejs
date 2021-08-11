@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Edit</title>
 </head>
 <body>
     <h1>here are your edits</h1>
+        <form action="/blvd/<%= oneUser._id %>?_method=PUT" method="POST">
+        <label for="name"> Name:</label>
+        <input type="text" name="name" value="<%= oneUser.name %>">
+        <br>
+        <label for="category"> Category:</label>
+        <input type="text" name="category" value="<%= oneUser.category %>">
+        <br>
+        <label for="location"> Location:</label>
+        <input type="text" name="location" value="<%= oneUser.location %>">
+        <br>
+        <input type="submit" value="Edit <%= oneUser.name %>  ">
+    </form>
 </body>
 </html>

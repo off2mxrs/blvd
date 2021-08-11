@@ -38,7 +38,10 @@ router.get('/:userId', (req, res) => {
 
 ///////// ✍️ EDIT ROUTE //////////////
 router.get('/:userId/edit', (req, res) => {
-    res.render('edit.ejs')
+    db.User.findById(req.params.userId, (err, showUser) => {
+        if (err) return console.log(err)
+        res.render('edit.ejs', { oneUser: showUser})
+    })
 })
 
 ///////// 💻 UPDATE ROUTE //////////////
