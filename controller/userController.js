@@ -46,7 +46,10 @@ router.get('/:userId/edit', (req, res) => {
 
 ///////// 💻 UPDATE ROUTE //////////////
 router.put('/:userId', (req, res) => {
-    res.redirect('/blvd')
+    db.User.findByIdAndUpdate(req.params.userId, req.body, (err, updatedUser) => {
+        if (err) return console.log(err)
+        res.redirect('/blvd/' + req.params.userId)
+    })
 })
 
 
