@@ -28,6 +28,10 @@ app.get('/blvd/:id', (req, res) => {
     res.send('SHOW BLVD Profile page')
 })
 
+///////// ✍️ EDIT ROUTE //////////////
+app.get('/blvd/:id/edit', (req, res) => {
+    res.send('EDIT BLVD Profile page')
+})
 
 
 
