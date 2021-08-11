@@ -6,11 +6,16 @@ const rowdy = require('rowdy-logger')
 const app = express()
 const port = 4000
 const rowdyResults = rowdy.begin(app)
+const userController = require('./controller/userController')
+
+
+//////////MIDDLEWARE///////////
+app.use('/blvd', userController);
 
 ///////// 🏁 INDEX ROUTE //////////////
-app.get('/blvd', (req, res) => {
-    res.send('WELCOME TO BLVD')
-})
+// app.get('/blvd', (req, res) => {
+//     res.send('WELCOME TO BLVD')
+// })
 
 ///////// 🆕 NEW ROUTE //////////////
 app.get('/blvd/new', (req, res) => {
