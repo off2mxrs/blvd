@@ -22,6 +22,10 @@ router.get('/:userId', (req, res) => {
     res.render('show.ejs')
 })
 
+///////// ✍️ EDIT ROUTE //////////////
+router.get('/:userId/edit', (req, res) => {
+    res.render('edit.ejs')
+})
 
 
 
