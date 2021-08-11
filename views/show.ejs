@@ -7,9 +7,11 @@
     <title><%= oneUser.name  %></title>
 </head>
 <body>
-    <h1>Show PAGE </h1>
-    <h1><%= oneUser.name  %></h1>
-    <h2><%= oneUser.category  %> </h2>
+    <%- include('./partials/navbar')  %> 
+    <h1><%= oneUser.name  %>'s Profile</h1>
+    <h2><%= oneUser.name  %> </h2>
+    <h3><%= oneUser.category  %> </h3>
     <p><%= oneUser.location  %> </p>
+    
 </body>
 </html>
