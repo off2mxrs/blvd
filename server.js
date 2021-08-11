@@ -11,6 +11,8 @@ const userController = require('./controller/userController')
 
 //////////MIDDLEWARE///////////
 app.set('view engine', 'ejs');
+// urlencoded has to go above app.use 'CONTROLLER' to add to db //////////
+app.use(express.urlencoded({ extended: false })) /// allows create route to Adds to DB
 app.use('/blvd', userController);
 
 

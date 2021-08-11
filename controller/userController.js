@@ -17,7 +17,11 @@ router.get('/new', (req, res) => {
 
 ///////// 👩‍🎨 CREATE ROUTE //////////////
 router.post('/', (req, res) => {
-    res.redirect('/blvd')
+    db.User.create(req.body, (err, createdUser) => {
+        if (err) return console.log(err)
+        res.redirect('/blvd')
+    })
+    console.log(req.body)
 })
 
 ///////// 🎙 SHOW ROUTE //////////////
