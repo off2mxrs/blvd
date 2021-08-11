@@ -16,6 +16,18 @@ app.get('/blvd', (req, res) => {
 app.get('/blvd/new', (req, res) => {
     res.send('NEW BLVD Profile page')
 })
+
+///////// 👩‍🎨 CREATE ROUTE //////////////
+app.post('/blvd', (req, res) => {
+    res.send('CREATED BLVD Profile page')
+})
+
+
+
+
+
+
+
 /// START SERVER ////////////
 app.listen(port, () => {
     console.log(` 🎨 💿 👨‍🎤 The server is running on port: ${port} 🎨 💿 👨‍🎤 `);
