@@ -30,7 +30,10 @@ router.post('/', (req, res) => {
 
 ///////// 🎙 SHOW ROUTE //////////////
 router.get('/:userId', (req, res) => {
-    res.render('show.ejs')
+    db.User.findById(req.params.userId, (err, showUser) => {
+        if (err) return console.log(err)
+        res.render('show.ejs', { oneUser: showUser})
+    })
 })
 
 ///////// ✍️ EDIT ROUTE //////////////
