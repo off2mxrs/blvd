@@ -17,6 +17,10 @@ router.post('/', (req, res) => {
     res.redirect('/blvd')
 })
 
+///////// 🎙 SHOW ROUTE //////////////
+router.get('/:userId', (req, res) => {
+    res.render('show.ejs')
+})
 
 
 
