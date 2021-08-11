@@ -18,10 +18,7 @@ app.use('/blvd', userController);
 
 
 
-///////// 👩‍🎨 CREATE ROUTE //////////////
-app.post('/blvd', (req, res) => {
-    res.send('CREATED BLVD Profile page')
-})
+
 
 
 ///////// 🎙 SHOW ROUTE //////////////
