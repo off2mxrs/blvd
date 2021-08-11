@@ -50,13 +50,22 @@ router.put('/:userId', (req, res) => {
         if (err) return console.log(err)
         res.redirect('/blvd/' + req.params.userId)
     })
+    console.log(req.body);
 })
 
 
 ///////// 🗑 Delete ROUTE //////////////
-router.delete('/blvd/:id', (req, res) => {
-    res.redirect('/blvd')
+router.delete('/:userId', (req, res) => {
+    const userId = req.params.userId
+
+    db.User.findByIdAndDelete(userId, (err) => {
+        if (err) return console.log(err);
+        res.redirect('/blvd')
+    })
+    console.log(req.body);
 })
+
+        
 
 
 module.exports = router;
