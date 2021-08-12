@@ -20,7 +20,10 @@ app.use(express.urlencoded({ extended: false })) /// allows create route to Adds
 app.use(express.static('public'))
 app.use('/blvd', userController);
 
-
+//Homepage/////////
+app.get('/' , (req, res) => {
+    res.render('homepage.ejs')
+})
 
 /// START SERVER ////////////
 app.listen(process.env.PORT || 4000, () => {
