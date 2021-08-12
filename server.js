@@ -23,6 +23,6 @@ app.use('/blvd', userController);
 
 /// START SERVER ////////////
 app.listen(process.env.PORT || 4000, () => {
-    console.log(` 🎨 💿 👨‍🎤 The server is running on port: ${port} 🎨 💿 👨‍🎤 `);
+    console.log(` 🎨 💿 👨‍🎤 The server is running on port: ${PORT} 🎨 💿 👨‍🎤 `);
     rowdyResults.print()
 })
