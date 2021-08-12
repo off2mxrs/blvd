@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
 
-const connectionString = 'mongodb://localhost:27017/blvd-db'
+// local host connection
+//const connectionString = 'mongodb://localhost:27017/blvd-db'
 
-mongoose.connect(connectionString, {
+mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
@@ -10,7 +11,11 @@ mongoose.connect(connectionString, {
   });
 
   mongoose.connection.on('connected', () => {
-    console.log(`🥭 💿 Mongoose connected to ${connectionString} 💿 🥭`);
+    console.log(`Mongoose connected to ${mongoose.connection.host}:${mongoose.connection.port}`);
+  });
+  
+  mongoose.connection.on("error", (err) => {
+    console.log("Could not connect to MongoDB!", err);
   });
 
   module.exports = {

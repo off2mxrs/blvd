@@ -1,11 +1,13 @@
 // REQUIRED MODULES ////////////
+require('dotenv').config()
 const express = require('express')
 const rowdy = require('rowdy-logger')
 const methodOverride = require('method-override')
 
+
 // VARIABLES //////////////
 const app = express()
-const port = 4000
+const PORT = 4000
 const rowdyResults = rowdy.begin(app)
 const userController = require('./controller/userController')
 
@@ -20,7 +22,7 @@ app.use('/blvd', userController);
 
 
 /// START SERVER ////////////
-app.listen(port, () => {
+app.listen(process.env.PORT || 4000, () => {
     console.log(` 🎨 💿 👨‍🎤 The server is running on port: ${port} 🎨 💿 👨‍🎤 `);
     rowdyResults.print()
 })

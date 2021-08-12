@@ -18,11 +18,14 @@
   },
   "homepage": "https://github.com/off2mxrs/blvd#readme",
   "dependencies": {
+    "@uploadcare/upload-client": "^1.1.5",
+    "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "install": "^0.13.0",
     "method-override": "^3.0.0",
     "mongoose": "^5.13.7",
-    "rowdy-logger": "^1.0.2"
+    "rowdy-logger": "^1.0.2",
+    "uploadcare-widget": "^3.11.3"
   }
 }
