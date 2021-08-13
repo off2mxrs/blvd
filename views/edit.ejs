@@ -20,6 +20,17 @@
         <label for="location"> Location:</label>
         <input type="text" name="location" value="<%= oneUser.location %>">
         <br>
+        <img src="<%= oneUser.profileImage %> " alt="Profile Picture">
+        <br>
+        <label for="profileImage"> Profile Image: </label>
+        <input type="text" name="profileImage" value="<%= oneUser.profileImage %>">
+        <br>
+        <label for="about"> About Me: </label>
+        <input type="text" name="about" value="<%= oneUser.about %>">
+        <br>
+        <label for="media"> Media Links: </label>
+        <input type="text" name="media" value="<%= oneUser.media %>">
+        <br>
         <input type="submit" value="Edit <%= oneUser.name %>  ">
     </form>
 </body>

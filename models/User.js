@@ -6,6 +6,8 @@ const userSchema = new mongoose.Schema({
     category: {type: String, required: true},
     location: {type: String, required: true},
     profileImage: String,
+    about: String,
+    media: String,
 })
 
 
