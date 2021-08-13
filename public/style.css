@@ -18,3 +18,84 @@ nav a {
 nav a:hover {
     color: rgb(135, 135, 135);
 }
+
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-areas: 
+      "name name name name"
+      " pic pic category category"
+      "pic pic location location ";
+
+      /* background-image: url(/images/cac62430292632111b3640fd5c3eb0d5.jpeg); */
+      /* background-size: 200px 200px 200px 200px;
+      max-width: 800px; 
+      max-height: 500px;
+      background-position: center; */
+       
+  }
+
+  .name {
+    grid-area: name;
+    background-color: crimson;
+    /* background-position-x: center; */
+    /* background-position-y: 90%; */
+    /* background-size: cover; */
+    /* max-width: auto;
+    max-height: 100px;
+    /* opacity: .8; */
+    /* border-radius: 1px;
+    padding: 0; */ 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+  }
+
+  .pic {
+    grid-area: pic;
+    background-color: rgb(20, 20, 220);
+    /* background-position-x: center; */
+    /* background-position-y: 90%; */
+    /* background-size: cover; */
+    /* max-width: auto;
+    max-height: 100px; */
+    /* opacity: .8; */
+    /* border-radius: 1px;
+    padding: 0; */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+  }
+  .category {
+    grid-area: category;
+    background-color: rgb(220, 213, 20);
+    /* background-position-x: center; */
+    /* background-position-y: 90%; */
+    /* background-size: cover; */
+    /* max-width: auto;
+    max-height: 100px; */
+    /* opacity: .8; */
+    /* border-radius: 1px;
+    padding: 0; */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+  }
+  .location {
+    grid-area: location;
+    background-color: rgb(12, 184, 46);
+    /* background-position-x: center; */
+    /* background-position-y: 90%; */
+    /* background-size: cover; */
+    /* max-width: auto;
+    max-height: 100px; */
+    /* opacity: .8; */
+    /* border-radius: 1px;
+    padding: 0; */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+  }
+
+
+
+img {
+    max-width: 300px;
+    max-height: 300px;
+    padding: 60px;
+    
+}
