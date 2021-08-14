@@ -11,24 +11,32 @@
     <%- include('./partials/navbar')  %> 
 
     <h1><%= oneUser.name  %>'s Profile</h1>
+
+    
     <container class="container">
-        <section class="name">
-            <h2><%= oneUser.name  %> </h2>
-        </section>
 
         <section class="pic">
+            <strong>Section 1 "Profile Pic"</strong>
             <img src="<%= oneUser.profileImage %> " alt="Profile Picture">
         </section>
 
-        <section class="category">
+        <section class="title">
+            <strong>Section 2 "Title"</strong>
+            <h2><%= oneUser.name  %> </h2>
             <h3><%= oneUser.category  %> </h3>
-        </section>
-
-        <section class="location">
             <p><%= oneUser.location  %> </p>
         </section>
-        <p><%= oneUser.about %> </p>    
-        <p><%= oneUser.media %> </p>    
+
+        <section class="about">
+            <strong>Section 3 "About"</strong>
+            <p><%= oneUser.about %> </p>    
+        </section>
+
+        <section class="media">
+            <strong>Section 4 "Media links"</strong>
+            <p><%= oneUser.media %> </p>    
+        </section>
+            
 
     </container>
     
