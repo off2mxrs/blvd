@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Show</title>
+    <link rel="stylesheet" href="/style.css">
+    <title><%= oneUser.name  %></title>
 </head>
 <body>
-    <h1>Show PAGE </h1>
+    <%- include('./partials/navbar')  %> 
+
+    <h1><%= oneUser.name  %>'s Profile</h1>
+
+    
+    <container class="container">
+
+        <section class="pic">
+            <strong>Section 1 "Profile Pic"</strong>
+            <img src="<%= oneUser.profileImage %> " alt="Profile Picture">
+        </section>
+
+        <section class="title">
+            <strong>Section 2 "Title"</strong>
+            <h2><%= oneUser.name  %> </h2>
+            <h3><%= oneUser.category  %> </h3>
+            <p><%= oneUser.location  %> </p>
+        </section>
+
+        <section class="about">
+            <strong>Section 3 "About"</strong>
+            <p><%= oneUser.about %> </p>    
+        </section>
+
+        <section class="media">
+            <strong>Section 4 "Media links"</strong>
+            <p><%= oneUser.media %> </p>    
+        </section>
+            
+
+    </container>
+    
 </body>
 </html>

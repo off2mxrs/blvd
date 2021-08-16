@@ -4,9 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <title>Edit</title>
 </head>
 <body>
+    <%- include('./partials/navbar')  %> 
     <h1>here are your edits</h1>
+        <form action="/blvd/<%= oneUser._id %>?_method=PUT" method="POST">
+        <label for="name"> Name:</label>
+        <input type="text" name="name" value="<%= oneUser.name %>">
+        <br>
+        <label for="category"> Category:</label>
+        <input type="text" name="category" value="<%= oneUser.category %>">
+        <br>
+        <label for="location"> Location:</label>
+        <input type="text" name="location" value="<%= oneUser.location %>">
+        <br>
+        <img src="<%= oneUser.profileImage %> " alt="Profile Picture">
+        <br>
+        <label for="profileImage"> Profile Image: </label>
+        <input type="text" name="profileImage" value="<%= oneUser.profileImage %>">
+        <br>
+        <label for="about"> About Me: </label>
+        <input type="text" name="about" value="<%= oneUser.about %>">
+        <br>
+        <label for="media"> Media Links: </label>
+        <input type="text" name="media" value="<%= oneUser.media %>">
+        <br>
+        <input type="submit" value="Edit <%= oneUser.name %>  ">
+    </form>
 </body>
 </html>
