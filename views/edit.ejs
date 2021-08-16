@@ -31,8 +31,15 @@
         <label for="about"> About Me: </label>
         <input type="text" name="about" value="<%= oneUser.about %>">
         <br>
-        <label for="media"> Media Links: </label>
-        <input type="text" name="media" value="<%= oneUser.media %>">
+        <h2 class="add-pics">Add some pictures!</h2>
+        <label for="image1"> Image link: </label>
+        <input type="text" name="image1" value="<%= oneUser.image1  %> ">
+        <br>
+        <label for="image2"> Image link: </label>
+        <input type="text" name="image2" value="<%= oneUser.image2  %>">
+        <br>
+        <label for="image3"> Image link: </label>
+        <input type="text" name="image3" value="<%= oneUser.image3  %>">
         <br>
         <input type="submit" value="Edit <%= oneUser.name %>  ">
     </form>

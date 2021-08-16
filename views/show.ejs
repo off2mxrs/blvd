@@ -18,7 +18,7 @@
 
     
     <div class="img-container">
-        <img src="<%= oneUser.profileImage %> " alt="Profile Picture">
+        <img class="profile-pic" src="<%= oneUser.profileImage %> " alt="Profile Picture">
     </div>
 
     <section class="title">
@@ -40,10 +40,15 @@
         </section>
 
         <section class="media">
-            <strong>Section 4 "Media links"</strong>
+            <strong>"Media links"</strong>
             <p><%= oneUser.media %> </p>    
         </section>
             
+       <section class="gallery">
+           <img class="img-gallery" src="<%= oneUser.image1 %> " alt="image 1">
+           <img class="img-gallery" src="<%= oneUser.image2 %> " alt="image 2">
+           <img class="img-gallery" src="<%= oneUser.image3 %> " alt="image 3">
+       </section>
 
     </container>
     

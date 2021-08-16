@@ -75,8 +75,9 @@ h1 {
   }
   .media {
     grid-area: media;
-    background-color: rgb(12, 184, 46);
+    background-color: rgb(12, 184, 46, 0.2);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+    padding: 20px;
   }
 
 
@@ -87,11 +88,29 @@ h1 {
   padding-top: 50px;
 }
 
+.profile-pic {
+  max-width: 800px;
+  max-height: 800px;
+  /* padding: 60px; */
+  box-shadow: 5px 5px 10px rgb(255, 255, 255);
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  
+}
+
+.img-gallery {
+  padding: 60px
+}
+
 img {
     max-width: 800px;
     max-height: 800px;
     /* padding: 60px; */
-    box-shadow: 5px 5px 10px rgb(255, 255, 255);
+  
     
 }
 
