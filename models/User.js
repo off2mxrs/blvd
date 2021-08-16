@@ -8,7 +8,9 @@ const userSchema = new mongoose.Schema({
     location: {type: String, required: true},
     profileImage: String,
     about: String,
-    media: String,
+    image1: String,
+    image2: String,
+    image3: String,
 })
 
 

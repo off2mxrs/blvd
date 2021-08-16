@@ -25,6 +25,13 @@ h1 {
   color: goldenrod;
   font-size: 30px
 }
+.add-pics {
+  text-align: center;
+  color: goldenrod;
+  font-size: 30px
+}
+
+
 
 .container {
     display: grid;
@@ -60,9 +67,11 @@ h1 {
   }*/
   .about {
     grid-area: about;
-    background-color: rgba(218, 218, 217, 0.5);
+    background-color: rgba(218, 218, 217, 0.1);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
-  
+    color: white;
+    padding: 25px;
+    font-size: 20px ;
   }
   .media {
     grid-area: media;
@@ -82,11 +91,19 @@ img {
     max-width: 800px;
     max-height: 800px;
     /* padding: 60px; */
-    
+    box-shadow: 5px 5px 10px rgb(255, 255, 255);
     
 }
 
 strong {
   color: white;
   font-size: 30px;
+}
+
+form {
+  color: white;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
 }
