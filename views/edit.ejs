@@ -41,7 +41,16 @@
         <label for="image3"> Image link: </label>
         <input type="text" name="image3" value="<%= oneUser.image3  %>">
         <br>
-        <input type="submit" value="Edit <%= oneUser.name %>  ">
+        <input class="edit" type="submit" value="Edit <%= oneUser.name %>  ">
     </form>
+
+       <br>
+       <br>
+       <br>
+       <br>
+     <form  action="/blvd/<%= oneUser._id %>?_method=DELETE " method="POST"> %>
+        <input class="delete" type="submit" value="Delete <%= oneUser.name  %> ">
+    </form>
+
 </body>
 </html>

@@ -126,3 +126,17 @@ form {
   flex-direction: column;
   text-align: center;
 }
+
+.delete:hover {
+  background: red;
+  color: white;
+}
+
+.edit:hover {
+  background: rgb(51, 255, 0);
+  color: white;
+}
+
+.edit {
+  background: goldenrod;
+}
