@@ -52,7 +52,10 @@ router.put('/:userId', (req, res) => {
     })
     console.log(req.body);
 })
-
+///////// 🗑 Delete ROUTE //////////////
+router.delete('/:userId', (req, res) => {
+    res.redirect('/blvd')
+})
 
 ///////// 🗑 Delete ROUTE //////////////
 router.delete('/:userId', (req, res) => {

@@ -11,6 +11,9 @@
     <%- include('./partials/navbar')  %> 
     <h1>here are your edits</h1>
         <form action="/blvd/<%= oneUser._id %>?_method=PUT" method="POST">
+        <label for="userName"> Username:</label>
+        <input type="text" name="userName" value="<%= oneUser.userName %>">
+        <br>
         <label for="name"> Name:</label>
         <input type="text" name="name" value="<%= oneUser.name %>">
         <br>

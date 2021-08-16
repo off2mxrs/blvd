@@ -1,12 +1,13 @@
 body {
-    margin: 0px;
+    background-color: rgb(0, 0, 0);
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(255, 250, 250, 0.1);
     padding: 5px;
+    /* box-shadow: 5px 5px 10px rgb(174, 174, 174); */
 }
 
 nav a {
@@ -16,9 +17,14 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(135, 135, 135);
+    color: goldenrod
 }
 
+h1 {
+  text-align: center;
+  color: goldenrod;
+  font-size: 30px
+}
 
 .container {
     display: grid;
@@ -29,22 +35,32 @@ nav a:hover {
       " pic pic about about"
       "pic pic media media ";
        
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+      flex-direction: column;
+      background-color: rgba(40, 40, 40, 0.5);
   }
 
   .title {
-    grid-area: title ;
-    background-color: crimson;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+    grid-area: title;
+    color: goldenrod;
+    /* background-color: crimson; */
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 1); */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(40, 40, 40, 0.5);
   }
 
-  .pic {
+  /* .pic {
     grid-area: pic;
     background-color: rgb(20, 20, 220);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
-  }
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 1); 
+  }*/
   .about {
     grid-area: about;
-    background-color: rgb(220, 213, 20);
+    background-color: rgb(187, 181, 4, 0.5);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
   }
   .media {
@@ -54,11 +70,18 @@ nav a:hover {
   }
 
 
+.img-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(40, 40, 40, 0.5);
+  padding-top: 50px;
+}
 
 img {
-    max-width: 500px;
-    max-height: 500px;
-    padding: 60px;
+    max-width: 800px;
+    max-height: 800px;
+    /* padding: 60px; */
+    
     
 }
 
