@@ -9,6 +9,7 @@ const db = require('../models/index')
 router.get('/', (req, res) => {
     db.User.find({}, (err, allUsers) => {
         if (err) return console.log(err)
+        
         res.render('index.ejs', {allUsers: allUsers})
     })
     

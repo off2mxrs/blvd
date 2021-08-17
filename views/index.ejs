@@ -4,21 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="/style.css">
+   <link rel="stylesheet" href="public/style1.css">
     <title>BLVD</title>
 </head>
 <body>
 
-    
+  <% for (let i = 0; i < allUsers.length; i++) {%>
+  <a href = "/blvd/ <%=allUsers[i]._id%>
+  <div style='background: url(/images/<%= allUsers[i].image %>); background-size:cover;>
+<h1><%= allUsers[i].name%></h1>
+</div>
+</a>
+<% } %> 
 
-    <%- include('./partials/navbar')  %> 
-    <h1>Welcome to BLVD</h1>
 
-    <% for(let i = 0; i < allUsers.length; i++) {%> 
-     <a href="/blvd/<%= allUsers[i]._id %> ">
-            <h2><%= allUsers[i].name %> </h2>
-    </a>
- <% } %> 
+
+   <!-- <div class="container">  -->
+        <!-- <div class="bg0"> -->
+          <!-- <h2>16 <span>| 24</span></h2> -->
+          <!-- <p>Profile Pics</p>
+        </div>
+        <div class="bg1"> -->
+          <!-- <h2><i class="fas fa-battery-three-quarters"></i></h2> -->
+          <!-- <p>about</p> -->
+        <!-- </div>
+        <div class="bg2">
+          <h2><i class="fas fa-running"></i></h2> -->
+          <!-- <p>media links</p> --> 
+        <!-- </div>
+        <div class="bg3"> -->
+          <!-- <h2>36 &deg;</h2> -->
+          <!-- <p>Bad Brains</p>
+        </div>
+        <div class="bg4"> -->
+          <!-- <h2><i class="fas fa-bed"></i></h2> -->
+          <!-- <p>sadf</p>
+        </div>
+        <div class="bg5"> -->
+          <!-- <h2>98 <span>bpm</span></h2> -->
+          <!-- <p>asfd</p>
+        </div>
+        <div class="bg7"> -->
+          <!-- <h2>170 <span>lbs</span></h2> -->
+          <!-- <p>sadf</p>
+        </div>
+        <div class="bg8"> -->
+          <!-- <h2>28 <span>%</span></h2> -->
+          <!-- <p>sadf</p>
+        </div>
+        <div class="bg9"> -->
+          <!-- <h2>118 <span>mgdl</span></h2> -->
+          <!-- <p>sdf</p>
+        </div>
+        <div class="bg10">
+          <h2>680 <span>kcal</span></h2>
+           <p>gjgjhj</p>
+        </div>
+        <div class="bg11"> -->
+          <!-- <h2><i class="fas fa-dumbbell"></i></h2> -->
+          <!-- <p>sadfa</p>
+        </div>
+        <div class="bg12"> --> 
+          <!-- <h2>85 <span>%</span></h2> -->
+          <!-- <p>Black Starr</p>
+        </div>
+      </div> -->
+
+    <!-- <%- include('./partials/navbar')  %>  -->
+    <!-- <h1>Welcome to BLVD</h1> -->
+
+     
 
 </body>
 </html>

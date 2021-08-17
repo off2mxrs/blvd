@@ -71,81 +71,81 @@ p {
   grid-column: 1 / 3;
 }
 
-.bg1 {
+/* .bg1 {
   background: url(/images/HRE.jpg);
   background-size: cover;
-}
+} */
 
-.bg2 {
+/* .bg2 {
   background-image: url(/images/marsmoto.jpg);
   /* color: #333; */
-  background-size: cover;
-}
+  /* background-size: cover;
+} */ 
 
-.bg3 {
-    background: url(images/bb_icon.jpeg);
+/* .bg3 {
+    background: url(/images/bb_icon.jpeg); */
     /* color: #333; */
-    background-size: cover;
+    /* background-size: cover;
   }
-  
+   */
 
-  .bg4 {
-    background: url(images/stu.jpg);
-    /* color: #333; */
+  /* .bg4 {
+    background: url(/images/stu.jpg);
+   
     background-size: cover;
-  }
+  } */
 
-  .bg5 {
-    background: url(images/IMG_0897.jpg);
+  /* .bg5 {
+    background: url(/images/IMG_0897.jpg);
     color: #333;
     background-size: cover;
-  }
+  } */
 
-  .bg6 {
-    background: url(images/RiseA.jpg);
-    /* color: #333; */
+  /* .bg6 {
+    background: url(/images/RiseA.jpg);
+
     background-size: cover;
-  }
+  } */
 
 
-  .bg7 {
-    background: url(images/slayer.jpg);
+  /* .bg7 {
+    background: url(/images/slayer.jpg);
+    
+    background-size: cover;
+  } */
+
+  /* .bg8 {
+    background: url(/images/RiseA.jpg);
+   
+    background-size: cover;
+  } */
+
+  /* .bg9 {
+    background: url(/images/suicidefile.jpg);
     color: #333;
     background-size: cover;
-  }
+  } */
 
-  .bg8 {
-    background: url(images/RiseA.jpg);
+  /* .bg10 {
+    background: url(/images/riseoverhead.jpg);
     color: #333;
     background-size: cover;
-  }
+  } */
 
-  .bg9 {
-    background: url(images/suicidefile.jpg);
-    color: #333;
-    background-size: cover;
-  }
-
-  .bg10 {
-    background: url(images/riseoverhead.jpg);
-    color: #333;
-    background-size: cover;
-  }
-
-  .bg11 {
-    background: url(images/sfileold.jpg);
+  /* .bg11 {
+    background: url(/images/sfileold.jpg);
     color: #333;
     background-size:cover ;
-  }
+  } */
 
-  .bg12 {
-    background: url(images/blackstarlarge.jpeg);
+    /* background: url(/images/blackstarlarg
+  .bg12 {e.jpeg);
     color: #333;
     background-size: cover;
-  }
+  } */
 
-  .bg0 {
-    background: url(images/jdogAK3.png);
+  /* .bg0 {
+    background: url(/images/jdogAK3.png);
     color: #333;
     background-size: cover;
-  }
+  } */

@@ -1,0 +1,15 @@
+<%for(let i = 0; i < allUsers.length; i++) {%> 
+     <a href="/blvd/<%= allUsers[i]._id %> ">
+            <h2><%= allUsers[i].name %> </h2>
+             <img class="profile-pic" src="<%= allUsers[i].profileImage %> " alt="Profile Picture">
+    </a>
+ <% } %> 
+
+
+ <% for (let i = 0; i < allUsers.length; i++) {%>
+  <a href = "/blvd/ <%=allUsers[i]._id%>
+  <div style='background: url(/images/<%= allUsers[i].image %>); background-size:cover;>
+<h1><%= allUsers[i].name%></h1>
+</div>
+</a>
+<% } %> 
