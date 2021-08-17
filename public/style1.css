@@ -72,12 +72,12 @@ p {
 }
 
 .bg1 {
-  background: url(images/HRE.jpg);
+  background: url(/images/HRE.jpg);
   background-size: cover;
 }
 
 .bg2 {
-  background-image: url(images/marsmoto.jpg);
+  background-image: url(/images/marsmoto.jpg);
   /* color: #333; */
   background-size: cover;
 }
