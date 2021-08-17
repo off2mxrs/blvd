@@ -106,6 +106,16 @@ h1 {
   padding: 60px
 }
 
+.index-gallery{
+  display: flex;
+  justify-content: center;
+  flex-direction: row-wrap;
+  flex-wrap: wrap;
+  align-content: space-between;
+ 
+}
+
+
 img {
     max-width: 800px;
     max-height: 800px;
@@ -139,4 +149,9 @@ form {
 
 .edit {
   background: goldenrod;
+}
+
+.link {
+  color: goldenrod;
+  text-decoration: underline;
 }
